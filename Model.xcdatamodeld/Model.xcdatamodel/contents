@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Foto" representedClassName="Foto" syncable="YES">
+        <attribute name="correto" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="imagem" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="legenda" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="posicao" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tema" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tema" inverseName="fotos" inverseEntity="Tema" syncable="YES"/>
+    </entity>
+    <entity name="Tema" representedClassName="Tema" syncable="YES">
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fotos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Foto" inverseName="tema" inverseEntity="Foto" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Tema" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Foto" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>

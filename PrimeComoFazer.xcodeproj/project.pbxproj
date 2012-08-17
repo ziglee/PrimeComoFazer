@@ -15,6 +15,14 @@
 		DFEAE99615DEA12800CB3CC2 /* PrimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE99515DEA12800CB3CC2 /* PrimeAppDelegate.m */; };
 		DFEAE99915DEA12800CB3CC2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEAE99715DEA12800CB3CC2 /* MainStoryboard.storyboard */; };
 		DFEAE99C15DEA12800CB3CC2 /* PrimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE99B15DEA12800CB3CC2 /* PrimeViewController.m */; };
+		DFEAE9A315DEA14800CB3CC2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE9A215DEA14800CB3CC2 /* CoreData.framework */; };
+		DFEAE9A615DEA1D800CB3CC2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9A415DEA1D800CB3CC2 /* Model.xcdatamodeld */; };
+		DFEAE9B215DEA75100CB3CC2 /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9B115DEA75100CB3CC2 /* UIImageToDataTransformer.m */; };
+		DFEAE9BB15DEB40C00CB3CC2 /* EditarTemasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9BA15DEB40C00CB3CC2 /* EditarTemasTableViewController.m */; };
+		DFEAE9C415DEB7A100CB3CC2 /* EditarTemaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9C315DEB7A000CB3CC2 /* EditarTemaTableViewController.m */; };
+		DFEAE9C715DEBB8600CB3CC2 /* Tema.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9C615DEBB8600CB3CC2 /* Tema.m */; };
+		DFEAE9CA15DEBB8700CB3CC2 /* Foto.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9C915DEBB8700CB3CC2 /* Foto.m */; };
+		DFEAE9CD15DED66F00CB3CC2 /* UIImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEAE9CC15DED66F00CB3CC2 /* UIImagePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,14 +31,28 @@
 		DFEAE98715DEA12800CB3CC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFEAE98915DEA12800CB3CC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DFEAE98D15DEA12800CB3CC2 /* PrimeComoFazer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrimeComoFazer-Info.plist"; sourceTree = "<group>"; };
-		DFEAE98F15DEA12800CB3CC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFEAE99115DEA12800CB3CC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DFEAE99315DEA12800CB3CC2 /* PrimeComoFazer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrimeComoFazer-Prefix.pch"; sourceTree = "<group>"; };
 		DFEAE99415DEA12800CB3CC2 /* PrimeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeAppDelegate.h; sourceTree = "<group>"; };
 		DFEAE99515DEA12800CB3CC2 /* PrimeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimeAppDelegate.m; sourceTree = "<group>"; };
-		DFEAE99815DEA12800CB3CC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DFEAE99A15DEA12800CB3CC2 /* PrimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeViewController.h; sourceTree = "<group>"; };
 		DFEAE99B15DEA12800CB3CC2 /* PrimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimeViewController.m; sourceTree = "<group>"; };
+		DFEAE9A215DEA14800CB3CC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DFEAE9A515DEA1D800CB3CC2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DFEAE9A815DEA6E200CB3CC2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DFEAE9A915DEA6E200CB3CC2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFEAE9B015DEA75100CB3CC2 /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIImageToDataTransformer.h; path = PrimeComoFazer/UIImageToDataTransformer.h; sourceTree = "<group>"; };
+		DFEAE9B115DEA75100CB3CC2 /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIImageToDataTransformer.m; path = PrimeComoFazer/UIImageToDataTransformer.m; sourceTree = "<group>"; };
+		DFEAE9B915DEB40C00CB3CC2 /* EditarTemasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditarTemasTableViewController.h; sourceTree = "<group>"; };
+		DFEAE9BA15DEB40C00CB3CC2 /* EditarTemasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditarTemasTableViewController.m; sourceTree = "<group>"; };
+		DFEAE9C215DEB7A000CB3CC2 /* EditarTemaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditarTemaTableViewController.h; sourceTree = "<group>"; };
+		DFEAE9C315DEB7A000CB3CC2 /* EditarTemaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditarTemaTableViewController.m; sourceTree = "<group>"; };
+		DFEAE9C515DEBB8600CB3CC2 /* Tema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tema.h; path = PrimeComoFazer/Tema.h; sourceTree = "<group>"; };
+		DFEAE9C615DEBB8600CB3CC2 /* Tema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tema.m; path = PrimeComoFazer/Tema.m; sourceTree = "<group>"; };
+		DFEAE9C815DEBB8700CB3CC2 /* Foto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Foto.h; path = PrimeComoFazer/Foto.h; sourceTree = "<group>"; };
+		DFEAE9C915DEBB8700CB3CC2 /* Foto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Foto.m; path = PrimeComoFazer/Foto.m; sourceTree = "<group>"; };
+		DFEAE9CB15DED66F00CB3CC2 /* UIImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImagePickerViewController.h; sourceTree = "<group>"; };
+		DFEAE9CC15DED66F00CB3CC2 /* UIImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEAE9A315DEA14800CB3CC2 /* CoreData.framework in Frameworks */,
 				DFEAE98615DEA12800CB3CC2 /* UIKit.framework in Frameworks */,
 				DFEAE98815DEA12800CB3CC2 /* Foundation.framework in Frameworks */,
 				DFEAE98A15DEA12800CB3CC2 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +73,7 @@
 		DFEAE97615DEA12800CB3CC2 = {
 			isa = PBXGroup;
 			children = (
+				DFEAE9A715DEA1E000CB3CC2 /* Model and Model Classes */,
 				DFEAE98B15DEA12800CB3CC2 /* PrimeComoFazer */,
 				DFEAE98415DEA12800CB3CC2 /* Frameworks */,
 				DFEAE98215DEA12800CB3CC2 /* Products */,
@@ -67,6 +91,7 @@
 		DFEAE98415DEA12800CB3CC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFEAE9A215DEA14800CB3CC2 /* CoreData.framework */,
 				DFEAE98515DEA12800CB3CC2 /* UIKit.framework */,
 				DFEAE98715DEA12800CB3CC2 /* Foundation.framework */,
 				DFEAE98915DEA12800CB3CC2 /* CoreGraphics.framework */,
@@ -77,12 +102,18 @@
 		DFEAE98B15DEA12800CB3CC2 /* PrimeComoFazer */ = {
 			isa = PBXGroup;
 			children = (
+				DFEAE98C15DEA12800CB3CC2 /* Supporting Files */,
+				DFEAE99715DEA12800CB3CC2 /* MainStoryboard.storyboard */,
 				DFEAE99415DEA12800CB3CC2 /* PrimeAppDelegate.h */,
 				DFEAE99515DEA12800CB3CC2 /* PrimeAppDelegate.m */,
-				DFEAE99715DEA12800CB3CC2 /* MainStoryboard.storyboard */,
 				DFEAE99A15DEA12800CB3CC2 /* PrimeViewController.h */,
 				DFEAE99B15DEA12800CB3CC2 /* PrimeViewController.m */,
-				DFEAE98C15DEA12800CB3CC2 /* Supporting Files */,
+				DFEAE9B915DEB40C00CB3CC2 /* EditarTemasTableViewController.h */,
+				DFEAE9BA15DEB40C00CB3CC2 /* EditarTemasTableViewController.m */,
+				DFEAE9C215DEB7A000CB3CC2 /* EditarTemaTableViewController.h */,
+				DFEAE9C315DEB7A000CB3CC2 /* EditarTemaTableViewController.m */,
+				DFEAE9CB15DED66F00CB3CC2 /* UIImagePickerViewController.h */,
+				DFEAE9CC15DED66F00CB3CC2 /* UIImagePickerViewController.m */,
 			);
 			path = PrimeComoFazer;
 			sourceTree = "<group>";
@@ -96,6 +127,20 @@
 				DFEAE99315DEA12800CB3CC2 /* PrimeComoFazer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFEAE9A715DEA1E000CB3CC2 /* Model and Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DFEAE9A415DEA1D800CB3CC2 /* Model.xcdatamodeld */,
+				DFEAE9C515DEBB8600CB3CC2 /* Tema.h */,
+				DFEAE9C615DEBB8600CB3CC2 /* Tema.m */,
+				DFEAE9C815DEBB8700CB3CC2 /* Foto.h */,
+				DFEAE9C915DEBB8700CB3CC2 /* Foto.m */,
+				DFEAE9B015DEA75100CB3CC2 /* UIImageToDataTransformer.h */,
+				DFEAE9B115DEA75100CB3CC2 /* UIImageToDataTransformer.m */,
+			);
+			name = "Model and Model Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +210,13 @@
 				DFEAE99215DEA12800CB3CC2 /* main.m in Sources */,
 				DFEAE99615DEA12800CB3CC2 /* PrimeAppDelegate.m in Sources */,
 				DFEAE99C15DEA12800CB3CC2 /* PrimeViewController.m in Sources */,
+				DFEAE9A615DEA1D800CB3CC2 /* Model.xcdatamodeld in Sources */,
+				DFEAE9B215DEA75100CB3CC2 /* UIImageToDataTransformer.m in Sources */,
+				DFEAE9BB15DEB40C00CB3CC2 /* EditarTemasTableViewController.m in Sources */,
+				DFEAE9C415DEB7A100CB3CC2 /* EditarTemaTableViewController.m in Sources */,
+				DFEAE9C715DEBB8600CB3CC2 /* Tema.m in Sources */,
+				DFEAE9CA15DEBB8700CB3CC2 /* Foto.m in Sources */,
+				DFEAE9CD15DED66F00CB3CC2 /* UIImagePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +226,7 @@
 		DFEAE98E15DEA12800CB3CC2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFEAE98F15DEA12800CB3CC2 /* en */,
+				DFEAE9A915DEA6E200CB3CC2 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -182,7 +234,7 @@
 		DFEAE99715DEA12800CB3CC2 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFEAE99815DEA12800CB3CC2 /* en */,
+				DFEAE9A815DEA6E200CB3CC2 /* pt */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -284,6 +336,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFEAE9A415DEA1D800CB3CC2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFEAE9A515DEA1D800CB3CC2 /* Model.xcdatamodel */,
+			);
+			currentVersion = DFEAE9A515DEA1D800CB3CC2 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DFEAE97815DEA12800CB3CC2 /* Project object */;
 }

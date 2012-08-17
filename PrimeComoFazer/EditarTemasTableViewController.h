@@ -1,5 +1,5 @@
 //
-//  PrimeViewController.h
+//  EditarTemasTableViewController.h
 //  PrimeComoFazer
 //
 //  Created by Cassio Landim on 17/08/12.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PrimeViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface EditarTemasTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+
 
 @end
