@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "Tema.h"
+#import "Foto.h"
 
 @interface UIImagePickerViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *tituloField;
-@property (weak, nonatomic) IBOutlet UITextField *legendaField;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UITextField *tituloField;
+@property (strong, nonatomic) IBOutlet UITextField *legendaField;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *certoErradoControl;
 
 @property (strong, nonatomic) Tema *tema;
+@property (strong, nonatomic) Foto *foto;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)takePicture:(id)sender;

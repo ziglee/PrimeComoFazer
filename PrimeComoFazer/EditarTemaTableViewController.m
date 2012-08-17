@@ -143,13 +143,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    Pergunta *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-//    
-//    PerguntaDetalheViewController *detalheObra = [self.storyboard instantiateViewControllerWithIdentifier:@"PerguntaDetalhe"];
-//    detalheObra.managedObjectContext = self.managedObjectContext;
-//    detalheObra.pergunta = selectedObject;
-//    detalheObra.secaoPerguntas = self.secaoPerguntas;
-//    [self.navigationController pushViewController:detalheObra animated:YES];
+    Foto *foto = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    UIImagePickerViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"TirarFoto"];
+    controller.managedObjectContext = self.managedObjectContext;
+    controller.foto = foto;
+    controller.tema = self.tema;
+    
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath

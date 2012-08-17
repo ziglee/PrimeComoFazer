@@ -19,6 +19,7 @@
 @synthesize imageView;
 @synthesize tituloField;
 @synthesize legendaField;
+@synthesize certoErradoControl;
 @synthesize managedObjectContext = __managedObjectContext;
 
 - (void)viewDidLoad
@@ -26,6 +27,13 @@
     [super viewDidLoad];
 
     self.navigationItem.title = [NSString stringWithFormat:@"Tirar Foto - %@", self.tema.titulo];
+    
+    if (self.foto != nil) {
+        self.tituloField.text = self.foto.titulo;
+        self.legendaField.text = self.foto.legenda;
+        self.imageView.image = self.foto.imagem;
+        self.certoErradoControl.selectedSegmentIndex = self.foto.correto.intValue ? 0 : 1;
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -63,11 +71,15 @@
 
 - (IBAction)savePhoto:(id)sender {
     if (imageView.image != nil) {
-        Foto *foto = [NSEntityDescription insertNewObjectForEntityForName:@"Foto" inManagedObjectContext: self.managedObjectContext];
-        foto.titulo = self.tituloField.text;
-        foto.legenda = self.legendaField.text;
-        foto.imagem = imageView.image;
-        foto.tema = self.tema;
+        
+        if (self.foto == nil)
+            self.foto = [NSEntityDescription insertNewObjectForEntityForName:@"Foto" inManagedObjectContext: self.managedObjectContext];
+        
+        self.foto.titulo = self.tituloField.text;
+        self.foto.legenda = self.legendaField.text;
+        self.foto.imagem = imageView.image;
+        self.foto.tema = self.tema;
+        self.foto.correto = [NSNumber numberWithInt: (self.certoErradoControl.selectedSegmentIndex == 0 ? 1 : 0)];
                 
         NSError *error = nil;
         if (![self.managedObjectContext save:&error])
