@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFBC842E15E3D6C40094B875 /* TemaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC842D15E3D6C40094B875 /* TemaCell.m */; };
+		DFBC843215E3DB550094B875 /* FotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC843115E3DB550094B875 /* FotosTableViewController.m */; };
+		DFBC843515E3DC020094B875 /* FotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC843415E3DC020094B875 /* FotoCell.m */; };
+		DFBC843A15E3DF860094B875 /* right2.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843615E3DF860094B875 /* right2.png */; };
+		DFBC843B15E3DF860094B875 /* wrong2.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843715E3DF860094B875 /* wrong2.png */; };
+		DFBC843C15E3DF860094B875 /* wrong1.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843815E3DF860094B875 /* wrong1.png */; };
+		DFBC843D15E3DF860094B875 /* right1.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843915E3DF860094B875 /* right1.png */; };
 		DFEAE98615DEA12800CB3CC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98515DEA12800CB3CC2 /* UIKit.framework */; };
 		DFEAE98815DEA12800CB3CC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98715DEA12800CB3CC2 /* Foundation.framework */; };
 		DFEAE98A15DEA12800CB3CC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98915DEA12800CB3CC2 /* CoreGraphics.framework */; };
@@ -26,6 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFBC842C15E3D6C40094B875 /* TemaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemaCell.h; sourceTree = "<group>"; };
+		DFBC842D15E3D6C40094B875 /* TemaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemaCell.m; sourceTree = "<group>"; };
+		DFBC843015E3DB550094B875 /* FotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotosTableViewController.h; sourceTree = "<group>"; };
+		DFBC843115E3DB550094B875 /* FotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotosTableViewController.m; sourceTree = "<group>"; };
+		DFBC843315E3DC020094B875 /* FotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoCell.h; sourceTree = "<group>"; };
+		DFBC843415E3DC020094B875 /* FotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoCell.m; sourceTree = "<group>"; };
+		DFBC843615E3DF860094B875 /* right2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right2.png; sourceTree = "<group>"; };
+		DFBC843715E3DF860094B875 /* wrong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong2.png; sourceTree = "<group>"; };
+		DFBC843815E3DF860094B875 /* wrong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong1.png; sourceTree = "<group>"; };
+		DFBC843915E3DF860094B875 /* right1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right1.png; sourceTree = "<group>"; };
 		DFEAE98115DEA12800CB3CC2 /* PrimeComoFazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeComoFazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEAE98515DEA12800CB3CC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFEAE98715DEA12800CB3CC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DFBC843E15E3DF8B0094B875 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DFBC843615E3DF860094B875 /* right2.png */,
+				DFBC843715E3DF860094B875 /* wrong2.png */,
+				DFBC843815E3DF860094B875 /* wrong1.png */,
+				DFBC843915E3DF860094B875 /* right1.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		DFEAE97615DEA12800CB3CC2 = {
 			isa = PBXGroup;
 			children = (
@@ -102,18 +130,25 @@
 		DFEAE98B15DEA12800CB3CC2 /* PrimeComoFazer */ = {
 			isa = PBXGroup;
 			children = (
+				DFBC843E15E3DF8B0094B875 /* images */,
 				DFEAE98C15DEA12800CB3CC2 /* Supporting Files */,
 				DFEAE99715DEA12800CB3CC2 /* MainStoryboard.storyboard */,
 				DFEAE99415DEA12800CB3CC2 /* PrimeAppDelegate.h */,
 				DFEAE99515DEA12800CB3CC2 /* PrimeAppDelegate.m */,
 				DFEAE99A15DEA12800CB3CC2 /* PrimeViewController.h */,
 				DFEAE99B15DEA12800CB3CC2 /* PrimeViewController.m */,
+				DFBC842C15E3D6C40094B875 /* TemaCell.h */,
+				DFBC842D15E3D6C40094B875 /* TemaCell.m */,
 				DFEAE9B915DEB40C00CB3CC2 /* EditarTemasTableViewController.h */,
 				DFEAE9BA15DEB40C00CB3CC2 /* EditarTemasTableViewController.m */,
 				DFEAE9C215DEB7A000CB3CC2 /* EditarTemaTableViewController.h */,
 				DFEAE9C315DEB7A000CB3CC2 /* EditarTemaTableViewController.m */,
 				DFEAE9CB15DED66F00CB3CC2 /* UIImagePickerViewController.h */,
 				DFEAE9CC15DED66F00CB3CC2 /* UIImagePickerViewController.m */,
+				DFBC843015E3DB550094B875 /* FotosTableViewController.h */,
+				DFBC843115E3DB550094B875 /* FotosTableViewController.m */,
+				DFBC843315E3DC020094B875 /* FotoCell.h */,
+				DFBC843415E3DC020094B875 /* FotoCell.m */,
 			);
 			path = PrimeComoFazer;
 			sourceTree = "<group>";
@@ -197,6 +232,10 @@
 			files = (
 				DFEAE99015DEA12800CB3CC2 /* InfoPlist.strings in Resources */,
 				DFEAE99915DEA12800CB3CC2 /* MainStoryboard.storyboard in Resources */,
+				DFBC843A15E3DF860094B875 /* right2.png in Resources */,
+				DFBC843B15E3DF860094B875 /* wrong2.png in Resources */,
+				DFBC843C15E3DF860094B875 /* wrong1.png in Resources */,
+				DFBC843D15E3DF860094B875 /* right1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +256,9 @@
 				DFEAE9C715DEBB8600CB3CC2 /* Tema.m in Sources */,
 				DFEAE9CA15DEBB8700CB3CC2 /* Foto.m in Sources */,
 				DFEAE9CD15DED66F00CB3CC2 /* UIImagePickerViewController.m in Sources */,
+				DFBC842E15E3D6C40094B875 /* TemaCell.m in Sources */,
+				DFBC843215E3DB550094B875 /* FotosTableViewController.m in Sources */,
+				DFBC843515E3DC020094B875 /* FotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +376,7 @@
 				DFEAE9A115DEA12800CB3CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

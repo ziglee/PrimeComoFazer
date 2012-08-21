@@ -1,39 +1,37 @@
 //
-//  PrimeViewController.m
+//  FotosTableViewController.m
 //  PrimeComoFazer
 //
-//  Created by Cassio Landim on 17/08/12.
+//  Created by Cassio Landim on 21/08/12.
 //  Copyright (c) 2012 SmartFingers. All rights reserved.
 //
 
-#import "PrimeViewController.h"
-#import "EditarTemasTableViewController.h"
 #import "FotosTableViewController.h"
-#import "TemaCell.h"
-#import "Tema.h"
+#import "FotoCell.h"
+#import "Foto.h"
 
-@interface PrimeViewController ()
-- (void)configureCell:(TemaCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+@interface FotosTableViewController ()
+- (void)configureCell:(FotoCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation PrimeViewController
+@implementation FotosTableViewController
 
+@synthesize tema = _tema;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize fetchedResultsController = __fetchedResultsController;
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad];    
     
-    UIBarButtonItem *configurarButton = [[UIBarButtonItem alloc] initWithTitle:@"Configurar" style:UIBarButtonItemStyleBordered target:self action:@selector(configurar)];
+    self.navigationController.title = self.tema.titulo;
     
-    self.navigationItem.rightBarButtonItems = [[NSArray alloc] initWithObjects:configurarButton, nil];
-    self.tableView.rowHeight = 60;
+    self.tableView.rowHeight = 300;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return UIInterfaceOrientationPortrait == interfaceOrientation;
+	return UIInterfaceOrientationPortrait == interfaceOrientation;
 }
 
 #pragma mark - Table view data source
@@ -52,27 +50,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    TemaCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    FotoCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
 #pragma mark - Table view delegate
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Tema *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    
-    FotosTableViewController *newController = [self.storyboard instantiateViewControllerWithIdentifier:@"TemaDetalhe"];
-    newController.managedObjectContext = self.managedObjectContext;
-    newController.tema = selectedObject;
-    
-    [self.navigationController pushViewController:newController animated:YES];
+
 }
 
 #pragma mark - Fetched results controller
@@ -84,12 +71,15 @@
     }
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Tema" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Foto" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"tema == %@", self.tema];
+    [fetchRequest setPredicate:predicate];
     
     [fetchRequest setFetchBatchSize:20];
     
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"titulo" ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"posicao" ascending:YES];
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -107,19 +97,15 @@
     return __fetchedResultsController;
 }
 
-- (void)configureCell:(TemaCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
-    Tema *tema = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.tituloLabel.text = tema.titulo;
-}
-
 #pragma mark -
 
-- (void)configurar
+- (void)configureCell:(FotoCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    EditarTemasTableViewController *newController = [self.storyboard instantiateViewControllerWithIdentifier:@"EditarTemas"];
-    newController.managedObjectContext = self.managedObjectContext;
-    [self.navigationController pushViewController:newController animated:YES];
+    Foto *foto = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.tituloLabel.text = foto.titulo;
+    cell.imagemView.image = foto.imagem;
+    cell.legendaView.text = foto.legenda;
+    cell.certoErradoImageView.image = foto.correto.intValue == 0 ? [UIImage imageNamed:@"right2.png"] : [UIImage imageNamed:@"wrong2.png"];
 }
 
 @end
