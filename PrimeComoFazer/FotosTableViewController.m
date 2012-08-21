@@ -7,6 +7,7 @@
 //
 
 #import "FotosTableViewController.h"
+#import "FotoDetalheViewController.h"
 #import "FotoCell.h"
 #import "Foto.h"
 
@@ -24,8 +25,7 @@
 {
     [super viewDidLoad];    
     
-    self.navigationController.title = self.tema.titulo;
-    
+    self.title = self.tema.titulo;    
     self.tableView.rowHeight = 300;
 }
 
@@ -59,7 +59,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    Foto *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    
+    FotoDetalheViewController *newController = [self.storyboard instantiateViewControllerWithIdentifier:@"FotoDetalhe"];
+    newController.foto = selectedObject;
+    
+    [self.navigationController pushViewController:newController animated:YES];
 }
 
 #pragma mark - Fetched results controller

@@ -14,6 +14,7 @@
 		DFBC843B15E3DF860094B875 /* wrong2.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843715E3DF860094B875 /* wrong2.png */; };
 		DFBC843C15E3DF860094B875 /* wrong1.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843815E3DF860094B875 /* wrong1.png */; };
 		DFBC843D15E3DF860094B875 /* right1.png in Resources */ = {isa = PBXBuildFile; fileRef = DFBC843915E3DF860094B875 /* right1.png */; };
+		DFBC844115E3E1150094B875 /* FotoDetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFBC844015E3E1150094B875 /* FotoDetalheViewController.m */; };
 		DFEAE98615DEA12800CB3CC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98515DEA12800CB3CC2 /* UIKit.framework */; };
 		DFEAE98815DEA12800CB3CC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98715DEA12800CB3CC2 /* Foundation.framework */; };
 		DFEAE98A15DEA12800CB3CC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEAE98915DEA12800CB3CC2 /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 		DFBC843715E3DF860094B875 /* wrong2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong2.png; sourceTree = "<group>"; };
 		DFBC843815E3DF860094B875 /* wrong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong1.png; sourceTree = "<group>"; };
 		DFBC843915E3DF860094B875 /* right1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right1.png; sourceTree = "<group>"; };
+		DFBC843F15E3E1150094B875 /* FotoDetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FotoDetalheViewController.h; sourceTree = "<group>"; };
+		DFBC844015E3E1150094B875 /* FotoDetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FotoDetalheViewController.m; sourceTree = "<group>"; };
 		DFEAE98115DEA12800CB3CC2 /* PrimeComoFazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimeComoFazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFEAE98515DEA12800CB3CC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DFEAE98715DEA12800CB3CC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				DFBC843115E3DB550094B875 /* FotosTableViewController.m */,
 				DFBC843315E3DC020094B875 /* FotoCell.h */,
 				DFBC843415E3DC020094B875 /* FotoCell.m */,
+				DFBC843F15E3E1150094B875 /* FotoDetalheViewController.h */,
+				DFBC844015E3E1150094B875 /* FotoDetalheViewController.m */,
 			);
 			path = PrimeComoFazer;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				DFBC842E15E3D6C40094B875 /* TemaCell.m in Sources */,
 				DFBC843215E3DB550094B875 /* FotosTableViewController.m in Sources */,
 				DFBC843515E3DC020094B875 /* FotoCell.m in Sources */,
+				DFBC844115E3E1150094B875 /* FotoDetalheViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

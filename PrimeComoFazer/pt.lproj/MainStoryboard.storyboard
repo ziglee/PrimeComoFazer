@@ -72,7 +72,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.95509805479999998" green="0.95509805479999998" blue="0.95509805479999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="Nne-Gd-du3">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="Nne-Gd-du3">
                                             <rect key="frame" x="474" y="49" width="274" height="230"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,6 +104,31 @@
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1887" y="177"/>
+        </scene>
+        <!--Foto Detalhe View Controller-->
+        <scene sceneID="8h2-di-7gR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnU-HH-2mN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="FotoDetalhe" id="m4y-eF-2yC" customClass="FotoDetalheViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SFi-PK-Dki">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="rup-NT-15t">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imagemView" destination="rup-NT-15t" id="KRu-Fn-6oW"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2785" y="177"/>
         </scene>
         <!--Editar Temas Table View Controller - Editar temas-->
         <scene sceneID="fwU-fB-1MN">
@@ -310,6 +335,12 @@
                 <relationship kind="outlet" name="imagemView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="legendaView" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="tituloLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FotoDetalheViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FotoDetalheViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imagemView" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="FotosTableViewController" superclassName="UITableViewController">
